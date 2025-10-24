@@ -1,6 +1,6 @@
 from decouple import config
 
-BOT_TOKEN = config("8040712620:AAHmTxcsbY4F_JAXi-x97Wy4nkpVqgIuZi8")
+BOT_TOKEN = config("8040712620:AAHDDZKMZH-1SGiSWnLzCgjLNnyYOuSnDW8")
 
 MONGODB_URI = config("mongodb+srv://souradeepm35_db_user:SIkjhLfjYTvhRJtb@cluster0.mfcz6oh.mongodb.net/")
 
