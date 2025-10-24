@@ -8,7 +8,7 @@ port = os.environ.get('PORT')
 
 app = Flask(__name__)
 
-URL = " "  # Replace with your render URL
+URL = "https://pokedex-bot-51qm.onrender.com"  # Replace with your render URL
 
 @app.route('/')
 def index():
