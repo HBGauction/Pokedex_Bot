@@ -17,10 +17,14 @@ from utils.helper import (
     get_pokemon_image_url,
     get_coords
 )
+from keep_alive import keep_alive, start_requesting
 
+
+
+BOT_TOKEN = "8040712620:AAHmTxcsbY4F_JAXi-x97Wy4nkpVqgIuZi8"
 bot = telebot.TeleBot(BOT_TOKEN)
 
-# Connect to MongoDB Atlas
+MONGODB_URL = 'mongodb+srv://souradeepm35_db_user:SIkjhLfjYTvhRJtb@cluster0.mfcz6oh.mongodb.net/'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client["pokedex"]
 collection = db["pokemons"]
@@ -446,6 +450,11 @@ def current_community_day_command(message):
 
     except Exception:
         bot.reply_to(message, "An error occurred while fetching the current time.")
+
+
+
+keep_alive()
+start_requesting()
 
 
 # @bot.message_handler(func=lambda message: True)
