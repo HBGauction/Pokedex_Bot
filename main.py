@@ -20,11 +20,7 @@ from utils.helper import (
 from keep_alive import keep_alive, start_requesting
 
 
-
-BOT_TOKEN = "8040712620:AAHmTxcsbY4F_JAXi-x97Wy4nkpVqgIuZi8"
 bot = telebot.TeleBot(BOT_TOKEN)
-
-MONGODB_URL = 'mongodb+srv://souradeepm35_db_user:SIkjhLfjYTvhRJtb@cluster0.mfcz6oh.mongodb.net/'
 client = pymongo.MongoClient(MONGODB_URI)
 db = client["pokedex"]
 collection = db["pokemons"]
