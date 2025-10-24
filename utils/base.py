@@ -1,8 +1,8 @@
 from decouple import config
 
-BOT_TOKEN = config("TOKEN")
+BOT_TOKEN = config("8040712620:AAHmTxcsbY4F_JAXi-x97Wy4nkpVqgIuZi8")
 
-MONGODB_URI = config("MONGO")
+MONGODB_URI = config("")
 
 BASE_URL = "https://pokeapi.co/api/v2/pokemon/"
 
